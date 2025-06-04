@@ -1,32 +1,27 @@
-
 import React from 'react';
-import { ArrowRight, Code, Users, Zap, Mail, Phone, MapPin, CheckCircle, Smartphone, Globe, Shield } from 'lucide-react';
+import { ArrowRight, Building, Code, Globe, Heart, Lightbulb, Mail, MapPin, Phone, Rocket, Shield, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      <nav className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                Phaunamics
-              </h1>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-              <a href="#products" className="text-gray-700 hover:text-blue-600 transition-colors">Products</a>
-              <a href="#values" className="text-gray-700 hover:text-blue-600 transition-colors">Our Values</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
-              <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700">
-                Get Started
-              </Button>
-            </div>
+      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <div className="text-2xl font-bold text-primary">Phaunamics</div>
+          <div className="hidden md:flex space-x-8">
+            <a href="#about" className="hover:text-primary transition-colors">About</a>
+            <a href="#products" className="hover:text-primary transition-colors">Products</a>
+            <a href="#values" className="hover:text-primary transition-colors">Values</a>
+            <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+          </div>
+          <div className="flex items-center space-x-4">
+            <ThemeToggle />
+            <Button>Get Started</Button>
           </div>
         </div>
       </nav>
