@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Building, Code, Globe, Heart, Lightbulb, Mail, MapPin, Phone, Rocket, Shield, Users } from 'lucide-react';
+import { ArrowRight, Building, Code, Globe, Heart, Lightbulb, Mail, MapPin, Phone, Rocket, Shield, Users, Zap, Smartphone, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -30,13 +30,13 @@ const Index = () => {
       <section className="pt-20 pb-32 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
               Building the Future of
               <span className="block bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                 Consumer Software
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
               Phaunamics is a parent company dedicated to creating innovative software solutions 
               that empower consumers and transform digital experiences.
             </p>
@@ -45,7 +45,7 @@ const Index = () => {
                 Explore Our Products
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-2 border-blue-600 text-blue-600 hover:bg-blue-50">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950">
                 Learn More About Us
               </Button>
             </div>
@@ -54,13 +54,13 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Who We Are
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               As a parent company, Phaunamics orchestrates a portfolio of innovative software brands, 
               each designed to solve unique consumer challenges and enhance digital lives.
             </p>
@@ -113,19 +113,19 @@ const Index = () => {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section id="products" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Our Software Portfolio
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Discover the diverse range of consumer software solutions under the Phaunamics umbrella.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white">
+            <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white dark:bg-gray-800">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4">
                   <Smartphone className="h-6 w-6 text-white" />
@@ -140,7 +140,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white">
+            <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white dark:bg-gray-800">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-4">
                   <Globe className="h-6 w-6 text-white" />
@@ -155,7 +155,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white">
+            <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white dark:bg-gray-800">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
                   <Shield className="h-6 w-6 text-white" />
@@ -174,10 +174,10 @@ const Index = () => {
       </section>
 
       {/* Values Section */}
-      <section id="values" className="py-20 bg-white">
+      <section id="values" className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Why Choose Phaunamics
             </h2>
           </div>
@@ -188,29 +188,29 @@ const Index = () => {
                 <div className="flex items-start space-x-4">
                   <CheckCircle className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Proven Track Record</h3>
-                    <p className="text-gray-600">Years of experience building successful consumer software with millions of satisfied users.</p>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Proven Track Record</h3>
+                    <p className="text-gray-600 dark:text-gray-300">Years of experience building successful consumer software with millions of satisfied users.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <CheckCircle className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Cutting-Edge Technology</h3>
-                    <p className="text-gray-600">We leverage the latest technologies and frameworks to deliver superior software experiences.</p>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Cutting-Edge Technology</h3>
+                    <p className="text-gray-600 dark:text-gray-300">We leverage the latest technologies and frameworks to deliver superior software experiences.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <CheckCircle className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">User-Centric Design</h3>
-                    <p className="text-gray-600">Every decision we make is guided by user research and feedback to ensure optimal experiences.</p>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">User-Centric Design</h3>
+                    <p className="text-gray-600 dark:text-gray-300">Every decision we make is guided by user research and feedback to ensure optimal experiences.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <CheckCircle className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Continuous Innovation</h3>
-                    <p className="text-gray-600">We're constantly pushing boundaries and exploring new possibilities in consumer software.</p>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Continuous Innovation</h3>
+                    <p className="text-gray-600 dark:text-gray-300">We're constantly pushing boundaries and exploring new possibilities in consumer software.</p>
                   </div>
                 </div>
               </div>
@@ -230,20 +230,20 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Get in Touch
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Have questions about our software or want to explore partnership opportunities? We'd love to hear from you.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <Card className="bg-white shadow-lg">
+              <Card className="bg-white dark:bg-gray-800 shadow-lg">
                 <CardHeader>
                   <CardTitle>Send us a message</CardTitle>
                   <CardDescription>We'll get back to you within 24 hours.</CardDescription>
@@ -265,15 +265,15 @@ const Index = () => {
 
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center">
                       <Mail className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Email</h4>
-                      <p className="text-gray-600">hello@phaunamics.com</p>
+                      <h4 className="font-semibold text-gray-900 dark:text-white">Email</h4>
+                      <p className="text-gray-600 dark:text-gray-300">hello@phaunamics.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -281,8 +281,8 @@ const Index = () => {
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Phone</h4>
-                      <p className="text-gray-600">+234 808 972 7602</p>
+                      <h4 className="font-semibold text-gray-900 dark:text-white">Phone</h4>
+                      <p className="text-gray-600 dark:text-gray-300">+234 808 972 7602</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -290,8 +290,8 @@ const Index = () => {
                       <MapPin className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Office</h4>
-                      <p className="text-gray-600">Lagos, NGA</p>
+                      <h4 className="font-semibold text-gray-900 dark:text-white">Office</h4>
+                      <p className="text-gray-600 dark:text-gray-300">Lagos, NGA</p>
                     </div>
                   </div>
                 </div>
