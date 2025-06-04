@@ -287,7 +287,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Phone</h4>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
+                      <p className="text-gray-600">+234 808 972 7602</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -296,7 +296,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Office</h4>
-                      <p className="text-gray-600">San Francisco, CA</p>
+                      <p className="text-gray-600">Lagos, NGA</p>
                     </div>
                   </div>
                 </div>
@@ -354,7 +354,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Phaunamics. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Phaunamics. All rights reserved.</p>
           </div>
         </div>
       </footer>
